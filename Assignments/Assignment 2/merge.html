@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <title>Merger</title>
+</head>
+<body>
+    <div class="col">
+        <ol class="names row" id="fnames">
+            First Names
+        </ol>
+        <ol class="names row" id="lnames">
+            Last Names
+        </ol>
+    </div>
+    
+    <div class="col">
+       <section class="row" id="control">
+           <a href="#" class="btn" id="merge2Single" onclick="mergeHandler(first_names, last_names, merge2Single)">Merge to Single</a>
+        
+            <a href="#" class="btn" id="merge2Object" onclick="mergeHandler(first_names, last_names, merge2Object)">Merge to Object</a>
+       </section>
+        
+        <section class="row">
+            <p id="output"></p>
+        </section>
+        
+        
+    </div>
+    <script src="jasmine/spec/merger.js"></script>
+    <script src="jasmine/spec/util.js"></script>
+</body>
+</html>

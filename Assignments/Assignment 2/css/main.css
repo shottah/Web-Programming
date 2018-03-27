@@ -1,0 +1,87 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, ol > li {
+    color: #ededed;
+}
+
+sub {
+    color: #666;
+}
+
+header {
+    background-color: #ededed;
+    border-radius: 0 0 100px 100px;
+}
+
+#title {
+    border: none;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.col {
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px 30px;
+    background-color: darkslategrey;
+    border-radius: 40px;
+}
+
+.col > section,
+.col > .row {
+    margin: 10px 0;
+    padding: 5px 5%;
+    background-color:aliceblue;
+    border-radius: 10px;
+}
+
+.row > .nav-data {
+    width: 60%;
+    display: inline-block;
+}
+
+.row#carmina {
+    text-align: center;
+}
+
+@media screen and (max-width:720px) and (min-width: 0px) {
+    .row > .nav-data {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+    
+    .row.nav {
+        text-align: center
+    }
+}
+
+#col-left {
+    width: 60%;
+    float: left;
+    margin-right: 50px;
+}
+
+#col-right {
+    width: 30%;
+    overflow:hidden;
+}
+
+#genreList {
+    height:240px;
+    width:99%%;
+    margin-top: 10px;
+    padding: 9px 9px;
+    border:1px solid grey;
+    border-radius: 10px;
+    background-color:darkslategray;
+    overflow:auto;
+}
+
+#genre-section {
+    height: 300px;
+    padding: 10px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+    <body>
+        <header id="title"><h1>Catullus: The Neo Poet</h1></header>
+        <article class="col">
+            <section class="row">
+               <h2>Register for Mailing List</h2>
+                <p>If you are interested in Catullus, our online newsletter articles are sent out weekly with interesting articles and poems of the artist. Register below to join the mailing list.</p>
+                <form action="/register.html" id="register" onsubmit="validateForm()" method="post">
+                    <p>First Name</p>
+                    <input type="text" name="fname" placeholder="John">
+                    <p>Last Name</p>
+                    <input type="text" name="lname" placeholder="Appleseed">
+                    <p>Email</p>
+                    <input type="email" name="email" placeholder="johnapp@me.com">
+                    <p>Date of Birth</p>
+                    <input type="date" name="dob">
+                    <p>Country</p>
+                    <select name="country">
+                        <option value="tt" selected>Trinidad</option>
+                    </select>
+                    <p>How often would you like updates per week?</p>
+                    <input type="number" name="frequency" value="1" min="1" max="7">
+                    <p>More Info</p>
+                    <sub>Please let us know what you thought about our website!</sub>
+                    <textarea name="review" placeholder="What would you like to tell us?"></textarea><p>Are you human?</p>
+                    <sub>What is the capital of Trinidad?</sub>
+                    <input type="password" name="robot" placeholder="******">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </section>
+        </article>
+        <script src="../js/main.js"></script>
+        <script src="../js/form.js"></script>
+    </body>
+</html>

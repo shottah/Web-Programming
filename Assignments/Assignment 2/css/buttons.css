@@ -1,0 +1,63 @@
+.col {
+    padding: 5% 5%;
+}
+
+.nav-menu {
+    text-align: center;
+}
+
+#nav-item-home {
+    background-color: #ededed;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    margin:0 5%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px #d9d9d9;
+}
+
+#nav-item-home:hover {
+    background-color: #888;
+    color: #ededed;
+}
+
+#control {
+    text-align: center;
+}
+
+.btn {
+    font-size: 12px;
+    text-align: center;
+    background-color: #666;
+    border: none;
+    border-style: inset;
+    color: #ededed;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    margin:0 5%;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.btn:active, #nav-item-home:active {
+    box-shadow: 0 3px #555;
+    transform: translateY(1px);
+}
+
+/* Add media query for < 330 px buttons on homepage get weird af*/
+
+@media screen and (max-width:720px) and (min-width: 0px) {
+    .btn {
+        position: inherit;
+        bottom: 0;
+    }
+}
